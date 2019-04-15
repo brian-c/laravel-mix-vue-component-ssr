@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Laravel Mix with Vue SSR</title>
+        <link rel="stylesheet" href="./build/components.css">
+    </head>
+
+    <body>
+        <p>Here's one counter:</p>
+
+        <p>
+            ~~~{
+                "component": "bc-counter",
+                "props": {}
+            }~~~
+        </p>
+
+        <p>It should have a light gray background set before the component is hydrated, but does not.</p>
+
+        <p>Here's another, with an <code>initialCount</code> of <code>5</code>:</p>
+
+        <p>
+            ~~~{
+                "component": "bc-counter",
+                "props": {
+                    "initialCount": 5
+                }
+            }~~~
+        </p>
+
+        <script src="./build/main.js"></script>
+    </body>
+</html>
